@@ -11,6 +11,9 @@ body{
 .text-dark{
     color: rgb(58, 58, 58);
 }
+.text-light{
+    color: rgb(120, 120, 133);
+}
 .btn-primary{
     background-color: rgb(224, 44, 109);
     color: white;
@@ -79,6 +82,44 @@ main > section{
     grid-template-columns: repeat(7 ,1fr);
     margin-bottom: 100px;
 }
+.collections-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.popular-collection-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.collection-card{
+    padding: 15px;
+ border-radius: 5px;
+ box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);;
+}
+.collection-card img{
+    width: 100%;
+}
+.collection-card-title{
+    font-weight: 500;
+    font-size: 1.85rem;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+.collection-card-description{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.star{
+    color: rgb(251, 130, 0);
+    
+}
+.star-rating{
+    display: inline;
+}
 @media screen and (max-width:576px){
     .navbar ,.banner{
         flex-direction: column;
@@ -87,6 +128,9 @@ main > section{
     .our-influencer{
         grid-template-columns: repeat(4,4fr);
         gap: 20px;
+    }
+    .collections-container{
+        grid-template-columns: repeat(1,1fr);
     }
     
 }
@@ -97,5 +141,13 @@ main > section{
     .our-influencer{
         grid-template-columns: repeat(4,4fr);
         gap: 20px;
+    }
+    .collections-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #last-card{
+        column-span: 2 ;
+        align-items: center;
+        margin: 0px auto;
     }
 }
