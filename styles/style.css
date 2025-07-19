@@ -18,6 +18,10 @@ body{
     padding: 10px 25px;
     border: 0px;
 }
+main > section{
+    max-width: 1110px;
+    margin: 0 auto;
+}
 /* nav related styles */
 .navbar{
     justify-content: space-between;
@@ -68,16 +72,30 @@ body{
 .banner-img img{
     width: 100%;
 }
+
+/* our-influencer section related styles */
+.our-influencer{
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+    margin-bottom: 100px;
+}
 @media screen and (max-width:576px){
     .navbar ,.banner{
         flex-direction: column;
         margin-bottom: 80px;
     }
-    
+    .our-influencer{
+        grid-template-columns: repeat(4,4fr);
+        gap: 20px;
+    }
     
 }
 @media screen and (min-width:576px) and (max-width:992px){
     .navbar, .banner{
         flex-direction: column;
+    }
+    .our-influencer{
+        grid-template-columns: repeat(4,4fr);
+        gap: 20px;
     }
 }
