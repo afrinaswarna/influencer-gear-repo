@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
      font-family: "Poppins", sans-serif;
+     height: auto;
 }
 /* shared styles */
 .display-flex{
@@ -92,6 +93,16 @@ main > section{
     font-weight: 600;
     font-size: 1.8rem;
 }
+.see-more{
+text-align: right;
+margin-top: 50px;
+
+}
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
 .collection-card{
     padding: 15px;
  border-radius: 5px;
@@ -120,10 +131,43 @@ background: rgb(255, 255, 255);;
 .star-rating{
     display: inline;
 }
+/* feature-product rep\lated styles */
+.feature-products{
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+.feature-products img{
+    width: 100%;
+}
+.feature-products-content{
+    max-width: 600px;
+}
+.feature-products-content-title{
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+#btn-second{
+    border-radius: 0;
+}
+/* footer related styles */
+.footer{
+background-color: black;
+color: white;
+text-align: center;
+padding: 50px 589px;
+}
 @media screen and (max-width:576px){
-    .navbar ,.banner{
+    .navbar {
         flex-direction: column;
         margin-bottom: 80px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
     }
     .our-influencer{
         grid-template-columns: repeat(4,4fr);
@@ -131,6 +175,14 @@ background: rgb(255, 255, 255);;
     }
     .collections-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .feature-products{
+        flex-direction: column-reverse;
+        
+        text-align: center;
+    }
+    .footer{
+        padding: 10px;
     }
     
 }
@@ -149,5 +201,8 @@ background: rgb(255, 255, 255);;
         column-span: 2 ;
         align-items: center;
         margin: 0px auto;
+    }
+    .footer{
+        padding: 50px;
     }
 }
