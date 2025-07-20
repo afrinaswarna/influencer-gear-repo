@@ -30,7 +30,7 @@ main > section{
 .navbar{
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .navbar ul li{
     list-style: none;
@@ -49,9 +49,9 @@ main > section{
     margin:0 auto ;
 }
 .banner{
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     margin-bottom: 70px;
 }
 .banner-content{
@@ -69,6 +69,7 @@ main > section{
     margin-bottom: 16px;
 }
 .banner-img{
+    width: 440px;
     background-image: url('/images/Circle\ design.svg');
     background-repeat:no-repeat;
     background-position: center;
@@ -158,7 +159,7 @@ background: rgb(255, 255, 255);;
 background-color: black;
 color: white;
 text-align: center;
-padding: 50px 589px;
+padding: 50px 300px;
 }
 @media screen and (max-width:576px){
     .navbar {
@@ -170,7 +171,7 @@ padding: 50px 589px;
         text-align: center;
     }
     .our-influencer{
-        grid-template-columns: repeat(4,4fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
     .collections-container{
@@ -191,7 +192,7 @@ padding: 50px 589px;
         flex-direction: column;
     }
     .our-influencer{
-        grid-template-columns: repeat(4,4fr);
+        grid-template-columns: repeat(4,1fr);
         gap: 20px;
     }
     .collections-container{
